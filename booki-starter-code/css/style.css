@@ -16,6 +16,9 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
 }
 
 header {
@@ -43,6 +46,7 @@ header img {
 }
 .category p:hover{
     border-top: 2px solid #0065FC;
+    color:#0065FC
     
 }
 .searchbar-and-filter{
@@ -129,9 +133,9 @@ header img {
 
 .main-container {
     width: 100%;
-    max-width: 90vw;
-    padding: 0 50px;
+    max-width: 75vw;
     box-sizing: border-box;
+    border-bottom: 2rem;
 }
 
 a {
@@ -171,9 +175,8 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    display:flex;
     flex-direction: row;
-    max-width: 1440px;
+    max-width: 75vw;
     gap:3rem;
 }
 
@@ -181,7 +184,6 @@ a {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 15px;
-    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
@@ -294,6 +296,45 @@ a {
     margin-bottom: 5px;
 }
 
+.activites{
+    display:flex;
+    flex-direction:column;
+    max-width: 75vw;
+}
+.list-activites{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.activites-container{
+    display:flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow:hidden;
+    box-shadow: 2px 2px 2px 2px lightgray;
+
+    
+}
+.activites-container h3{
+    margin-left: 1.5rem
+}
+.activites-card{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:17vw;
+    overflow:hidden;
+    height:380px
+}
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 74vw;
+    background-color: #F2F2F2;
+   padding:1rem
+    
+}
 
 
 @media (max-width: 1850px) {
