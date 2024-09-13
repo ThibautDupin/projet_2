@@ -23,6 +23,7 @@ header {
     align-items: flex-start;
     /* height: 8vh; */
     justify-content: space-between;
+    max-width: 75vw;
     
 }
 header img {
@@ -172,61 +173,76 @@ a {
     justify-content: space-between;
     display:flex;
     flex-direction: row;
+    max-width: 1440px;
+    gap:3rem;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 15px;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements{
     width:fit-content;
-    max-width: 55vw;
+    max-width: 45vw;
 }
 .hebergements h4{
     font-weight: bold;
+    margin:1rem 0 1rem 1.5rem
+}
+.hebergements h3{
+    font-weight: bold;
+    margin:0 0 0 1.5rem
 }
 .hebergements-choice {
    
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.hebergements-card img{
-    width: 300px;
+.hebergements-image-container img{
+    width:auto;
+    height:200%;
+    width:200%
+    
+}
+.hebergements-image-container {
+    width: 240px; 
+    height: 120px;
+    overflow: hidden;
     border: 5px solid white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-bottom:-90px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .hebergements-card{
     border-radius: 20px;
-    width:fit-content;
-    background-image: src="../images/hebergements/annie-spratt.jpg";
-    margin-bottom: 140px;
+    width:30%;
+    margin:0;
+    margin-bottom: 1.5rem;
 
 }
 .hebergements-infos p{
-    margin: 5px;
+    margin: 2px;
 }
 .hebergements-infos h4{
-    margin: 5px
+    margin: 2px
 }
 .hebergements-rating{
-    margin:5px;
+    margin:2px;
 }
 .hebergements-infos{
     display:flex;
     flex-direction: column;
-    position:absolute;
-    padding:1rem;
+    padding:0.5rem;
     background-color:white;
-    width:278px;
+    width:234px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     
@@ -280,7 +296,17 @@ a {
 
 
 
+@media (max-width: 1850px) {
+    .hebergements-card{
+        width: 35%;
+    }
 
+}
+@media (max-width:1400px){
+    .hebergements-and-populaires{
+    display:flex;
+    flex-direction: column;}
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
