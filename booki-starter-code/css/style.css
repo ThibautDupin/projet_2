@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --maxwidth:1440px;
 }
 
 .fa-solid {
@@ -26,7 +27,7 @@ header {
     align-items: flex-start;
     /* height: 8vh; */
     justify-content: space-between;
-    max-width: 75vw;
+    max-width: var(--maxwidth);
     
 }
 header img {
@@ -133,7 +134,7 @@ header img {
 
 .main-container {
     width: 100%;
-    max-width: 75vw;
+    max-width: var(--maxwidth);
     box-sizing: border-box;
     border-bottom: 2rem;
 }
@@ -176,7 +177,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    max-width: 75vw;
+    max-width: var(--maxwidth);
     gap:3rem;
 }
 
@@ -189,7 +190,7 @@ a {
 /****** Hebergements ***********/
 .hebergements{
     width:fit-content;
-    max-width: 45vw;
+    max-width: 68vw;
 }
 .hebergements h4{
     font-weight: bold;
@@ -225,7 +226,7 @@ a {
   }
 .hebergements-card{
     border-radius: 20px;
-    width:30%;
+    width:33%;
     margin:0;
     margin-bottom: 1.5rem;
 
@@ -299,18 +300,19 @@ a {
 .activites{
     display:flex;
     flex-direction:column;
-    max-width: 75vw;
+    max-width: var(--maxwidth);
 }
 .list-activites{
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .activites-container{
     display:flex;
     flex-direction: column;
     border-radius: 20px;
     overflow:hidden;
+    width:23%;
     box-shadow: 2px 2px 2px 2px lightgray;
 
     
@@ -322,7 +324,7 @@ a {
     display:flex;
     justify-content:center;
     align-items: center;
-    width:17vw;
+    width:23vw;
     overflow:hidden;
     height:380px
 }
@@ -330,19 +332,15 @@ footer{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 74vw;
+    width:95vw;
     background-color: #F2F2F2;
    padding:1rem
     
 }
 
 
-@media (max-width: 1850px) {
-    .hebergements-card{
-        width: 35%;
-    }
-
-}
+    
+ 
 @media (max-width:1400px){
     .hebergements-and-populaires{
     display:flex;
@@ -358,11 +356,12 @@ footer{
     }
 
     .hebergements {
-        width: 100%;
+        width:95%;
+        max-width: fit-content;
     }
-
+    
     .populaires {
-        width: 100%;
+        width: 95%;
         margin-top: 50px;
     }
 
