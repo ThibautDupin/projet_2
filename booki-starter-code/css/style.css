@@ -358,7 +358,9 @@ footer{
 }
 
 
-    
+    .infos{
+        width:33%
+    }
 @media (max-width:1293px){
         .hebergements-card{
             width:37%
