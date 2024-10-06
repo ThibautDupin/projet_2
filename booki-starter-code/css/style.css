@@ -393,7 +393,7 @@ a {
   overflow: hidden;
   height: 380px;
 }
-
+/****** Footer ***********/
 footer {
   display: flex;
   flex-direction: row;
@@ -415,23 +415,30 @@ footer {
   margin-bottom: 0;
 }
 
+/****** Responsive ***********/
 @media (max-width: 1293px) {
   .hebergements-card {
     width: 37%;
   }
 }
-
+/****** Medium devices (ipad, less than 1400px) ***********/
 @media (max-width: 1400px) {
   body {
     margin: 10px 15px 0 15px;
   }
+
+/****** Header ***********/
   .category {
     margin-top: -10px;
   }
+
+/****** Searchbar & Filter ***********/
   .filters {
     flex-wrap: wrap;
   max-width: 630px;
   }
+
+/****** Hebergements & populaires ***********/
   .hebergements-and-populaires {
     flex-direction: column;
     display: flex;
@@ -476,9 +483,7 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  header img {
-    height: 2.2vh;
-  }
+  
   .main-container {
     gap: 1rem;
   }
@@ -489,25 +494,16 @@ footer {
     justify-content: center;
     gap: 0;
   }
-
+  
+/****** Header ***********/
+  header img {
+    height: 2.2vh;
+  }
   header {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  .searchbar a {
-    border-radius: 15px;
-    width: 50px;
-    box-shadow: 0px 3px 15px 0px lightgray;
-  }
-  .searchbar a i {
-    display: block;
-    color: white;
-  }
-  .searchbar a p {
-    display: none;
-  }
-
   .category {
     width: 100vw;
     display: flex;
@@ -524,6 +520,20 @@ footer {
   .category a:hover {
     border-bottom: #0065fc solid 3px;
     border-top: hidden;
+  }
+
+/****** Searchbar & Filter ***********/
+  .searchbar a {
+    border-radius: 15px;
+    width: 50px;
+    box-shadow: 0px 3px 15px 0px lightgray;
+  }
+  .searchbar a i {
+    display: block;
+    color: white;
+  }
+  .searchbar a p {
+    display: none;
   }
 
   .filters {
@@ -551,6 +561,7 @@ footer {
     display: none;
   }
 
+/****** Hebergements & Populair ***********/
   .hebergements-choice {
     flex-direction: column;
     width: 100%;
@@ -622,6 +633,8 @@ footer {
   .populaires-cards a {
     width: auto;
   }
+
+/****** Activites ***********/
   .activites {
     align-items: center;
   }
@@ -646,6 +659,8 @@ footer {
   .activites-card {
     width: 100%;
   }
+
+/****** Footer ***********/
 
   footer {
     flex-direction: column;
